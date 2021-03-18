@@ -3,7 +3,7 @@
 Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ4hAPU1cJED6t3DU0h34bz
 ### Demos
 - [x] Part 2 - Blink
-- [ ] Part 3
+- [x] Part 3
 - [ ] Part 4
 - [ ] Part 5
 - [ ] Part 6
