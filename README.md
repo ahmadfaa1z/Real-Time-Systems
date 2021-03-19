@@ -3,7 +3,7 @@
 Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ4hAPU1cJED6t3DU0h34bz
 ### Demos
 - [x] Part 2 - Blink
-- [x] Part 3
+- [x] Part 3 - Task Schedulling
 - [ ] Part 4
 - [ ] Part 5
 - [ ] Part 6
@@ -11,8 +11,8 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [ ] Part 8
 
 ### Challenges
-- [x] Part 2 - Blink at different rates
-- [ ] Part 3
+- [x] Part 2 - Blink LED at different rates
+- [x] Part 3 - Blink LED at given rate (from serial)
 - [ ] Part 4
 - [ ] Part 5
 - [ ] Part 6
