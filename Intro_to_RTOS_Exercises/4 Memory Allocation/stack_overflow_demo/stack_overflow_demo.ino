@@ -49,7 +49,7 @@ void testTask(void *parameter)
     Serial.println(xPortGetFreeHeapSize());
 
     // Free up our allocated memory
-    //vPortFree(ptr);
+//    vPortFree(ptr);
 
     // Wait for a while
     vTaskDelay(100 / portTICK_PERIOD_MS);
