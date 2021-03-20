@@ -4,7 +4,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 ### Demos
 - [x] Part 2 - Blink
 - [x] Part 3 - Task Schedulling
-- [ ] Part 4
+- [x] Part 4 - Memory, static, stack, heap
 - [ ] Part 5
 - [ ] Part 6
 - [ ] Part 7
