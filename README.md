@@ -13,7 +13,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 ### Challenges
 - [x] Part 2 - Blink LED at different rates
 - [x] Part 3 - Blink LED at given rate (from serial)
-- [ ] Part 4
+- [x] Part 4 - Send and receive message using heap memory (with LED notification)
 - [ ] Part 5
 - [ ] Part 6
 - [ ] Part 7
