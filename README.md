@@ -5,7 +5,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 2 - Blink
 - [x] Part 3 - Task Schedulling
 - [x] Part 4 - Memory, static, stack, heap
-- [ ] Part 5
+- [x] Part 5 - Queue
 - [ ] Part 6
 - [ ] Part 7
 - [ ] Part 8
