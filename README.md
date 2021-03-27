@@ -14,7 +14,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 2 - Blink LED at different rates
 - [x] Part 3 - Blink LED at given rate (from serial)
 - [x] Part 4 - Send and receive message using heap memory (with LED notification)
-- [ ] Part 5
+- [x] Part 5 - Applying two queues + struct
 - [ ] Part 6
 - [ ] Part 7
 - [ ] Part 8
