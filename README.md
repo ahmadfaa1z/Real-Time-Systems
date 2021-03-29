@@ -6,7 +6,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 3 - Task Schedulling
 - [x] Part 4 - Memory, static, stack, heap
 - [x] Part 5 - Queue, atomic operation, kernel objects...
-- [5] Part 6 - Mutex, shared resources, bathroom key analogy
+- [x] Part 6 - Mutex, shared resources, bathroom key analogy
 - [ ] Part 7
 - [ ] Part 8
 
