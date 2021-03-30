@@ -2,7 +2,7 @@
 
 Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ4hAPU1cJED6t3DU0h34bz
 ### Demos
-- [x] Part 2 - Blink
+- [x] [Part 2](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro_to_RTOS_Exercises/2%20Blink_LED) - Blink
 - [x] Part 3 - Task Schedulling
 - [x] Part 4 - Memory, static, stack, heap
 - [x] Part 5 - Queue, atomic operation, kernel objects...
