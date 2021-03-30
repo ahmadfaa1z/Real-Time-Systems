@@ -5,7 +5,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 2 - [Blink](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro_to_RTOS_Exercises/2%20Blink_LED/Blink_demo/Blink_demo.ino)
 - [x] Part 3 - [Task Schedulling](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro_to_RTOS_Exercises/3%20Task_Schedulling/Task_Schedulling_demo/Task_Schedulling_demo.ino)
 - [x] Part 4 - [Memory, static, stack, heap](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro_to_RTOS_Exercises/4%20Memory%20Allocation/stack_overflow_demo/stack_overflow_demo.ino)
-- [x] Part 5 - [Queue](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro_to_RTOS_Exercises/5%20Queue/Queue_demo/Queue_demo.ino), [Queue_full](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro_to_RTOS_Exercises/5%20Queue/Queue_demo/Queue_demo.ino), atomic operation, kernel objects...
+- [x] Part 5 - [Queue](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro_to_RTOS_Exercises/5%20Queue/Queue_demo/Queue_demo.ino), [Queue_full](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro_to_RTOS_Exercises/5%20Queue/Queue_full_demo/Queue_full_demo.ino), atomic operation, kernel objects...
 - [x] Part 6 - Mutex, race condition, shared resources, bathroom key analogy
 - [ ] Part 7
 - [ ] Part 8
