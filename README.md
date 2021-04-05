@@ -20,5 +20,6 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [ ] Part 8
 
 ### Mini Project
+- ...
 ---
 ![Blink](https://user-images.githubusercontent.com/39882376/111452481-88a9e800-874d-11eb-82bc-adde84f4ccc6.gif)
