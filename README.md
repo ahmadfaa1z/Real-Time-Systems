@@ -14,12 +14,16 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 2 - [Blink LED at different rates](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/2%20Blink_LED/Blink_diff_rates/Blink_diff_rates.ino)
 <details>
 <summary>Blink One LED with two different rates</summary>
+  
   ![Blink one LED with two different rates](https://user-images.githubusercontent.com/39882376/111452481-88a9e800-874d-11eb-82bc-adde84f4ccc6.gif)
+
 </details>
 
 <details>
   <summary>Blink two LEDs, each with different rates</summary>
+  
   ![Blink two LEDs](https://user-images.githubusercontent.com/39882376/114172966-f7ebb400-9968-11eb-807f-2d482238b881.gif)
+
 </details> 
 
 - [x] Part 3 - [Blink LED at given rate (from serial)](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/3%20Task_Schedulling/Read_from_serial_to_blinkLED/Read_from_serial_to_blinkLED.ino)
