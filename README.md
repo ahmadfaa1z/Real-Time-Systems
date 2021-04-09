@@ -22,16 +22,14 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 ### MINI PROJECT
 #### 1 Sequential LED
   - Arduino UNO
-    - In this [code](), the arduino was only able to run one task at a time. When attempting to press two buttons, the first task needs to finish before any buttons can be read again.
+    - In this [code](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/ESP32%20Applications/3_Diff_Sequential_LED/3_Diff_Sequential_LED.ino), the arduino was only able to run one task at a time. When attempting to press two buttons, the first task needs to finish before any buttons can be read again.
     - *There are probably workarounds in Arduino to be able to multitask.*
-https://user-images.githubusercontent.com/39882376/114168857-66c60e80-9963-11eb-8fa3-61fc3be661ed.mp4
+    - [Video of Sequential LED using Arduino](https://youtu.be/2j2qaQt21xA)
 
 - ESP32
-  - Using [ESP32](), while a task is running, we can also run other tasks. ESP32 shows ability to multitask.
-  - Sequential LED (Running one task at a time)
-https://user-images.githubusercontent.com/39882376/114169003-99700700-9963-11eb-9d4e-5474eceb0073.mp4
-  - Sequential LED (Running multiple sequence tasks)
-https://user-images.githubusercontent.com/39882376/114169033-a260d880-9963-11eb-8c75-fd894c7241a3.mp4
+  - Using [ESP32](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/ESP32 Applications/Run_Multiple_Sequence_ESP32/Run_Multiple_Sequence_ESP32.ino), while a task is running, we can also run other tasks. This shows that we can multitask in ESP32 with ease.
+  - [Sequential LED (Running one task at a time)](https://youtu.be/n27mR-tzbkM)
+  - [Sequential LED (Running multiple sequence tasks)](https://youtu.be/2B5idacvKn0)
 
 ---
 ![Blink](https://user-images.githubusercontent.com/39882376/111452481-88a9e800-874d-11eb-82bc-adde84f4ccc6.gif)
