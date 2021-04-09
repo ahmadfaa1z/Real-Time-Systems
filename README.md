@@ -12,10 +12,17 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 
 ### Challenges
 - [x] Part 2 - [Blink LED at different rates](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/2%20Blink_LED/Blink_diff_rates/Blink_diff_rates.ino)
-  - Using the same LED
-  - ![Blink one LED with two different rates](https://user-images.githubusercontent.com/39882376/111452481-88a9e800-874d-11eb-82bc-adde84f4ccc6.gif)
-  - Using two different LEDs
-  - ![Blink two LEDs](https://user-images.githubusercontent.com/39882376/114172966-f7ebb400-9968-11eb-807f-2d482238b881.gif)
+  - <details>
+<summary>Using the same LED</summary>
+
+![Blink one LED with two different rates](https://user-images.githubusercontent.com/39882376/111452481-88a9e800-874d-11eb-82bc-adde84f4ccc6.gif)
+
+</details> 
+  - <summary>Using two different LEDs</summary>
+
+![Blink two LEDs](https://user-images.githubusercontent.com/39882376/114172966-f7ebb400-9968-11eb-807f-2d482238b881.gif)
+
+</details> 
 - [x] Part 3 - [Blink LED at given rate (from serial)](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/3%20Task_Schedulling/Read_from_serial_to_blinkLED/Read_from_serial_to_blinkLED.ino)
 - [x] Part 4 - [Send and receive message using heap memory (with LED notification)](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/4%20Memory%20Allocation/Send_and_receive_using_memory/Send_and_receive_using_memory.ino)
 - [x] Part 5 - [Applying two queues (send & receive messages) + struct](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/5%20Queue/Two_queues_challenge/Two_queues_challenge.ino)
