@@ -19,7 +19,13 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [ ] Part 7
 - [ ] Part 8
 
-### Mini Project
-- ...
+### MINI PROJECT
+#### 1 Sequential LED
+  - Arduino UNO
+    - In this [code](), the arduino was only able to run one task at a time. When attempting to press two buttons, the first task needs to finish before any buttons can be read again.
+    - *There are probably workarounds in Arduino to be able to multitask.*
+
+- ESP32
+  - Using [ESP32](), while a task is running, we can also run other tasks. ESP32 shows ability to multitask.
 ---
 ![Blink](https://user-images.githubusercontent.com/39882376/111452481-88a9e800-874d-11eb-82bc-adde84f4ccc6.gif)
