@@ -28,8 +28,8 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 
 - ESP32
   - Using [ESP32](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/ESP32 Applications/Run_Multiple_Sequence_ESP32/Run_Multiple_Sequence_ESP32.ino), while a task is running, we can also run other tasks. This shows that we can multitask in ESP32 with ease.
-  - [Sequential LED (Running one task at a time)](https://youtu.be/n27mR-tzbkM)
-  - [Sequential LED (Running multiple sequence tasks)](https://youtu.be/2B5idacvKn0)
+  - [Video of ESP32 (Running one task at a time)](https://youtu.be/n27mR-tzbkM)
+  - [Video of ESP32 (Running multiple sequence tasks)](https://youtu.be/2B5idacvKn0)
 
 ---
 ![Blink](https://user-images.githubusercontent.com/39882376/111452481-88a9e800-874d-11eb-82bc-adde84f4ccc6.gif)
