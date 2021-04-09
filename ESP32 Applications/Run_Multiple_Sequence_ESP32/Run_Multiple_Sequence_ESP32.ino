@@ -99,14 +99,6 @@ void Sequence_3(void *parameter) {
   }
 }
 
-//void Read_Buttons(void *parameter) {
-//  while (1) {
-//    Button_state1 = (digitalRead(Button_1));
-//    Button_state2 = (digitalRead(Button_2));
-//    Button_state3 = (digitalRead(Button_3));
-//  }
-//}
-
 void setup() {
   Serial.begin(115200);
 
