@@ -33,7 +33,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [ ] Part 7
 - [ ] Part 8
 
-### MINI PROJECT
+### MINI PROJECTS
 #### 1 Sequential LED
   - Arduino UNO
     - In this [code](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/ESP32%20Applications/3_Diff_Sequential_LED/3_Diff_Sequential_LED.ino), the arduino was only able to run one task at a time. When attempting to press two buttons, the first task needs to finish before any buttons can be read again.
