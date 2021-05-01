@@ -5,19 +5,15 @@
 #endif
 
 // Settings
-enum {BUF_SIZE = 5};                  // Size of buffer array
+static const uint8_t queue_len = 10;  // Size of queue
 static const int num_prod_tasks = 5;  // Number of producer tasks
 static const int num_cons_tasks = 2;  // Number of consumer tasks
 static const int num_writes = 3;      // Num times each producer writes to buf
 
 // Globals
-static int buf[BUF_SIZE];             // Shared buffer
-static int head = 0;                  // Writing index to buffer
-static int tail = 0;                  // Reading index to buffer
 static SemaphoreHandle_t bin_sem;     // Waits for parameter to be read
-static SemaphoreHandle_t mutex;
-static SemaphoreHandle_t fill_sem;
-static SemaphoreHandle_t empty_sem;
+static SemaphoreHandle_t mutex;       // Lock access to Serial resource
+static QueueHandle_t msg_queue;       // Send data from producer to consumer
 
 //*****************************************************************************
 // Tasks
@@ -31,16 +27,9 @@ void producer(void *parameters) {
   // Release the binary semaphore
   xSemaphoreGive(bin_sem);
 
-  // Fill shared buffer with task number
+  // Fill queue with task number (wait max time if queue is full)
   for (int i = 0; i < num_writes; i++) {
-
-    xSemaphoreTake(empty_sem, portMAX_DELAY);
-
-    // Critical section (accessing shared buffer)
-    buf[head] = num;
-    head = (head + 1) % BUF_SIZE;
-
-    xSemaphoreGive(fill_sem);
+    xQueueSend(msg_queue, (void *)&num, portMAX_DELAY);
   }
 
   // Delete self task
@@ -55,14 +44,13 @@ void consumer(void *parameters) {
   // Read from buffer
   while (1) {
 
-    xSemaphoreTake(fill_sem, portMAX_DELAY);
+    // Read from queue (wait max time if queue is empty)
+    xQueueReceive(msg_queue, (void *)&val, portMAX_DELAY);
 
-    // Critical section (accessing shared buffer and Serial)
-    val = buf[tail];
-    tail = (tail + 1) % BUF_SIZE;
+    // Lock Serial resource with a mutex
+    xSemaphoreTake(mutex, portMAX_DELAY);
     Serial.println(val);
-
-    xSemaphoreGive(empty_sem);
+    xSemaphoreGive(mutex);
   }
 }
 
@@ -77,15 +65,16 @@ void setup() {
   Serial.begin(115200);
 
   // Wait a moment to start (so we don't miss Serial output)
-  vTaskDelay(3000 / portTICK_PERIOD_MS);
+  vTaskDelay(1000 / portTICK_PERIOD_MS);
   Serial.println();
-  Serial.println("---FreeRTOS Semaphore's Challenge using Counting Semaphores---");
+  Serial.println("---FreeRTOS Semaphore Solution using Queue---");
 
   // Create mutexes and semaphores before starting tasks
   bin_sem = xSemaphoreCreateBinary();
   mutex = xSemaphoreCreateMutex();
-  fill_sem = xSemaphoreCreateCounting(BUF_SIZE, 0);
-  empty_sem = xSemaphoreCreateCounting(BUF_SIZE, BUF_SIZE);
+
+  // Create queue
+  msg_queue = xQueueCreate(queue_len, sizeof(int));
 
   // Start producer tasks (wait for each to read argument)
   for (int i = 0; i < num_prod_tasks; i++) {
@@ -112,14 +101,14 @@ void setup() {
                             app_cpu);
   }
 
-  // Notify that all tasks have been created
+  // Notify that all tasks have been created (lock Serial with mutex)
   xSemaphoreTake(mutex, portMAX_DELAY);
   Serial.println("All tasks created");
   xSemaphoreGive(mutex);
 }
 
 void loop() {
-  
+
   // Do nothing but allow yielding to lower-priority tasks
   vTaskDelay(1000 / portTICK_PERIOD_MS);
 }
