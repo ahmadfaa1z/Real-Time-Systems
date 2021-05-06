@@ -10,6 +10,9 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 7 - Semaphores, [binary semaphores](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Binary_Semaphore_demo/Binary_Semaphore_demo.ino), [counting semaphores](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Counting_Sempahore_demo/Counting_Sempahore_demo.ino)
 - [x] Part 8 - Software Timers, [one-shot timer, auto-reload timer](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/8%20Software%20Timers/Software_Timer_demo/Software_Timer_demo.ino)
 - [ ] Part 9
+- [ ] Part 10
+- [ ] Part 11
+- [ ] Part 12
 
 ### Challenges
 - [x] Part 2 - [Blink LED at different rates](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/2%20Blink_LED/Blink_diff_rates/Blink_diff_rates.ino)
@@ -34,8 +37,11 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 7 - Writing (0-4) three times with Producer-Consumer design
   - [Solution using Counting Semaphores](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Sempahore_challenge_counting_sempahore/Sempahore_challenge_counting_sempahore.ino)
   - [Solution using Queue](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Semaphore_challenge_queue/Semaphore_challenge_queue.ino)
-- [ ] Part 8
+- [x] Part 8 - Turn on LED when entering serial commands and off if serial is inactive, [Code link](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/8%20Software%20Timers/LED_dim_delay_serial_input/LED_dim_delay_serial_input.ino)
 - [ ] Part 9
+- [ ] Part 10
+- [ ] Part 11
+- [ ] Part 12
 
 ### MINI PROJECTS
 #### 1 Sequential LED
