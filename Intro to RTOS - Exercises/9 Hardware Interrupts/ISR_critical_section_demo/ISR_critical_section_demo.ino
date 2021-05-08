@@ -5,7 +5,7 @@
 #endif
 
 // Settings
-static const uint16_t timer_divider = 8;
+static const uint16_t timer_divider = 8;    // clock ticks at 10Mhz
 static const uint64_t timer_max_count = 1000000;
 static const TickType_t task_delay = 2000 / portTICK_PERIOD_MS;
 

@@ -1,5 +1,5 @@
 // Settings
-static const uint16_t timer_divider = 80;
+static const uint16_t timer_divider = 80;           // clock ticks at 1MHz
 static const uint64_t timer_max_count = 1000000;
 
 // Pins (change this if your Arduino board does not have LED_BUILTIN defined)
