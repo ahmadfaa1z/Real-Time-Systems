@@ -47,14 +47,14 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 <details>
   <summary>Circuit overview</summary>
 
-
+![GPS NEO](https://user-images.githubusercontent.com/39882376/117541830-5aa79c80-b048-11eb-8b86-3553f1ca8d08.gif)
 
 </details> 
 
 <details>
   <summary>Serial Output View</summary>
 
-
+![Serial Output](https://user-images.githubusercontent.com/39882376/117542546-ab6cc480-b04b-11eb-8828-c6c979e56253.gif)
 
 </details> 
 
