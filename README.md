@@ -47,7 +47,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 <details>
   <summary>Circuit overview</summary>
 
-![GPS NEO](https://user-images.githubusercontent.com/39882376/117541830-5aa79c80-b048-11eb-8b86-3553f1ca8d08.gif)
+![IMG_7083](https://user-images.githubusercontent.com/39882376/117571171-e3cdda80-b0ff-11eb-8c3d-dcfb3b64eb2f.jpeg)
 
 </details> 
 
