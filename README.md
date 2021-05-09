@@ -47,7 +47,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 <details>
   <summary>Circuit overview</summary>
 
-![m_ESP32 + GPS NEO](https://user-images.githubusercontent.com/39882376/117571244-517a0680-b100-11eb-980e-040dcbdac5ce.jpg)
+![ESP32 + GPS NEO](https://user-images.githubusercontent.com/39882376/117571277-75d5e300-b100-11eb-882c-45cccd9b6a39.jpg)
 
 </details> 
 
