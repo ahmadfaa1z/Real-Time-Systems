@@ -2,8 +2,8 @@
 #include <LoRa.h>
 
 //define the pins used by the transceiver module
-#define ss 5
-#define rst 4
+#define ss 10
+#define rst 6
 #define dio0 2
 
 void setup() {
