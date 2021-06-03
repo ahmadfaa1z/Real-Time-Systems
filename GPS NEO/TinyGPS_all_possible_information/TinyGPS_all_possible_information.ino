@@ -7,7 +7,7 @@ static const uint32_t GPSBaud = 9600;
 TinyGPSPlus gps;
 
 void setup(){
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial1.begin(GPSBaud,SERIAL_8N1,RXPin,TXPin);
 }
 
@@ -16,6 +16,10 @@ void loop(){
   while (Serial1.available() > 0){
     gps.encode(Serial1.read());
     if (gps.location.isUpdated()){
+
+      Serial.println("-----------------------------------------------------");
+      Serial.println("-----------------------------------------------------");
+      
       // Latitude in degrees (double)
       Serial.print("Latitude= "); 
       Serial.print(gps.location.lat(), 6);      
@@ -114,6 +118,7 @@ void loop(){
       // Horizontal Dim. of Precision (100ths-i32)
       Serial.print("HDOP = "); 
       Serial.println(gps.hdop.value()); 
+      delay(10000);
     }
   }
 }
