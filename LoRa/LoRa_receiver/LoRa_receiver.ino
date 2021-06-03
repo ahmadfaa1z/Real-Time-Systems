@@ -2,9 +2,9 @@
 #include <LoRa.h>
 
 //define the pins used by the transceiver module
-#define ss 10
-#define rst 6
-#define dio0 2
+#define ss 18
+#define rst 14
+#define dio0 26
 
 void setup() {
   //initialize Serial Monitor
@@ -26,7 +26,7 @@ void setup() {
   // Change sync word (0xF3) to match the receiver
   // The sync word assures you don't get LoRa messages from other LoRa transceivers
   // ranges from 0-0xFF
-  LoRa.setSyncWord(0xF3);
+  LoRa.setSyncWord(0xFF);
   Serial.println("LoRa Initializing OK!");
 }
 
