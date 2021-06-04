@@ -17,14 +17,14 @@ void loop(){
     gps.encode(Serial1.read());
     if (gps.location.isUpdated()){
 
-      Serial.println("-----------------------------------------------------");
-      Serial.println("-----------------------------------------------------");
+      Serial.println("=====================================================");
+      Serial.println("----------------------- location -----------------------");
       
       // Latitude in degrees (double)
-      Serial.print("Latitude= "); 
-      Serial.print(gps.location.lat(), 6);      
+      Serial.print("Latitude = "); 
+      Serial.println(gps.location.lat(), 6);      
       // Longitude in degrees (double)
-      Serial.print(" Longitude= "); 
+      Serial.print("Longitude = "); 
       Serial.println(gps.location.lng(), 6); 
        
       // Raw latitude in whole degrees
@@ -41,6 +41,8 @@ void loop(){
       // ... and billionths (u16/u32)
       Serial.println(gps.location.rawLng().billionths);
 
+
+      Serial.println("----------------------- date -----------------------");
       // Raw date in DDMMYY format (u32)
       Serial.print("Raw date DDMMYY = ");
       Serial.println(gps.date.value()); 
@@ -55,6 +57,7 @@ void loop(){
       Serial.print("Day = "); 
       Serial.println(gps.date.day()); 
 
+      Serial.println("----------------------- time -----------------------");
       // Raw time in HHMMSSCC format (u32)
       Serial.print("Raw time in HHMMSSCC = "); 
       Serial.println(gps.time.value()); 
@@ -72,6 +75,7 @@ void loop(){
       Serial.print("Centisecond = "); 
       Serial.println(gps.time.centisecond()); 
 
+      Serial.println("----------------------- speed -----------------------");
       // Raw speed in 100ths of a knot (i32)
       Serial.print("Raw speed in 100ths/knot = ");
       Serial.println(gps.speed.value()); 
@@ -88,6 +92,7 @@ void loop(){
       Serial.print("Speed in km/h = "); 
       Serial.println(gps.speed.kmph()); 
 
+      Serial.println("----------------------- course -----------------------");
       // Raw course in 100ths of a degree (i32)
       Serial.print("Raw course in degrees = "); 
       Serial.println(gps.course.value()); 
@@ -95,6 +100,7 @@ void loop(){
       Serial.print("Course in degrees = "); 
       Serial.println(gps.course.deg()); 
 
+      Serial.println("----------------------- altitude -----------------------");
       // Raw altitude in centimeters (i32)
       Serial.print("Raw altitude in centimeters = "); 
       Serial.println(gps.altitude.value()); 
@@ -111,10 +117,12 @@ void loop(){
       Serial.print("Altitude in feet = "); 
       Serial.println(gps.altitude.feet()); 
 
+      Serial.println("----------------------- satellites -----------------------");
       // Number of satellites in use (u32)
-      Serial.print("Number os satellites in use = "); 
+      Serial.print("Number of satellites in use = "); 
       Serial.println(gps.satellites.value()); 
 
+      Serial.println("----------------------- HDOP -----------------------");
       // Horizontal Dim. of Precision (100ths-i32)
       Serial.print("HDOP = "); 
       Serial.println(gps.hdop.value()); 
