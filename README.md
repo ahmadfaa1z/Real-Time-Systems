@@ -10,8 +10,9 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 7 - Semaphores, [binary semaphores](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Binary_Semaphore_demo/Binary_Semaphore_demo.ino), [counting semaphores](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Counting_Sempahore_demo/Counting_Sempahore_demo.ino)
 - [x] Part 8 - Software Timers, [one-shot timer, auto-reload timer](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/8%20Software%20Timers/Software_Timer_demo/Software_Timer_demo.ino)
 - [x] Part 9 - Hardware Interrupts, ISR
+  - [Link to demo codes](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro%20to%20RTOS%20-%20Exercises/09%20Hardware%20Interrupts) 
 - [x] Part 10 - Deadlock, Livelock, Starvation, timeout, hierarchy, arbitrator
-  - [Link to codes](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro%20to%20RTOS%20-%20Exercises/10%20Deadlock%20&%20Starvation)
+  - [Link to demo codes](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro%20to%20RTOS%20-%20Exercises/10%20Deadlock%20&%20Starvation)
 - [ ] Part 11
 - [ ] Part 12
 
