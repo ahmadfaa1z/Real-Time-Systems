@@ -9,8 +9,8 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 6 - [Mutex](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/6%20Mutex/Mutex_demo/Mutex_demo.ino), [race condition](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/6%20Mutex/race_condition_demo/race_condition_demo.ino), shared resources, restroom key analogy
 - [x] Part 7 - Semaphores, [binary semaphores](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Binary_Semaphore_demo/Binary_Semaphore_demo.ino), [counting semaphores](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Counting_Sempahore_demo/Counting_Sempahore_demo.ino)
 - [x] Part 8 - Software Timers, [one-shot timer, auto-reload timer](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/8%20Software%20Timers/Software_Timer_demo/Software_Timer_demo.ino)
-- [ ] Part 9 - Hardware Interrupts, 
-- [ ] Part 10
+- [x] Part 9 - Hardware Interrupts, ISR
+- [x] Part 10 - Deadlock, Livelock, Starvation, timeout, hierarchy, arbitrator
 - [ ] Part 11
 - [ ] Part 12
 
@@ -39,7 +39,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
   - [Solution using Queue](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Semaphore_challenge_queue/Semaphore_challenge_queue.ino)
 - [x] Part 8 - Turn on LED when entering serial commands and off if serial is inactive, [Code link](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/8%20Software%20Timers/LED_dim_delay_serial_input/LED_dim_delay_serial_input.ino)
 - [ ] Part 9
-- [ ] Part 10
+- [x] Part 10 - Solve for Deadlock of 5 philosophores eating with 2 chopsticks
 - [ ] Part 11
 - [ ] Part 12
 
