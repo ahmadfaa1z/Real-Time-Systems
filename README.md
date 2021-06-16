@@ -11,6 +11,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
 - [x] Part 8 - Software Timers, [one-shot timer, auto-reload timer](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/8%20Software%20Timers/Software_Timer_demo/Software_Timer_demo.ino)
 - [x] Part 9 - Hardware Interrupts, ISR
 - [x] Part 10 - Deadlock, Livelock, Starvation, timeout, hierarchy, arbitrator
+  - [Link to codes](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro%20to%20RTOS%20-%20Exercises/10%20Deadlock%20&%20Starvation)
 - [ ] Part 11
 - [ ] Part 12
 
@@ -39,7 +40,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
   - [Solution using Queue](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/7%20Semaphore/Semaphore_challenge_queue/Semaphore_challenge_queue.ino)
 - [x] Part 8 - Turn on LED when entering serial commands and off if serial is inactive, [Code link](https://github.com/ahmadfaa1z/Real-Time-Systems/blob/main/Intro%20to%20RTOS%20-%20Exercises/8%20Software%20Timers/LED_dim_delay_serial_input/LED_dim_delay_serial_input.ino)
 - [ ] Part 9
-- [x] Part 10 - Solve for Deadlock of 5 philosophores eating with 2 chopsticks
+- [x] Part 10 - Solve for [Deadlock of 5 philosophores](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro%20to%20RTOS%20-%20Exercises/10%20Deadlock%20&%20Starvation) eating with 2 chopsticks
 - [ ] Part 11
 - [ ] Part 12
 
