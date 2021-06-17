@@ -13,7 +13,7 @@ Activities & Challenges from https://www.youtube.com/playlist?list=PLEBQazB0HUyQ
   - [Link to demo codes](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro%20to%20RTOS%20-%20Exercises/09%20Hardware%20Interrupts) 
 - [x] Part 10 - Deadlock, Livelock, Starvation, timeout, hierarchy, arbitrator
   - [Link to demo codes](https://github.com/ahmadfaa1z/Real-Time-Systems/tree/main/Intro%20to%20RTOS%20-%20Exercises/10%20Deadlock%20&%20Starvation)
-- [ ] Part 11
+- [x] Part 11 - Priority Inversion (PI), Bounded PI, Unbounded PI, Priority Ceiling Protocol, Priority Inheritance
 - [ ] Part 12
 
 ### Challenges
