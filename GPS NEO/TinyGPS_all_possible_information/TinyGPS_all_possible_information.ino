@@ -63,8 +63,11 @@ void loop(){
       Serial.println(gps.time.value()); 
 
       // Hour (0-23) (u8)
-      Serial.print("Hour = "); 
-      Serial.println(gps.time.hour()); 
+      Serial.print("Hour = ");
+      
+      // ADJUSTING TO LOCAL TIME
+      int hour_val = 8+gps.time.hour();
+      Serial.println(hour_val); 
       // Minute (0-59) (u8)
       Serial.print("Minute = "); 
       Serial.println(gps.time.minute()); 
