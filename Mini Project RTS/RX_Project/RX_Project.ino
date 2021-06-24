@@ -1,3 +1,9 @@
+#if CONFIG_FREERTOS_UNICORE
+static const BaseType_t app_cpu = 0;
+#else
+static const BaseType_t app_cpu = 1;
+#endif
+
 #include <SPI.h>
 #include <LoRa.h>
 
@@ -6,6 +12,27 @@
 #define RST 14
 #define DIO0 26
 
+void loraReceive(void *parameter) {
+  while (1) {
+    // try to parse packet
+    int packetSize = LoRa.parsePacket();
+    if (packetSize > 0) {
+      // received a packet
+      Serial.println();
+      Serial.println("************************************");
+      Serial.println("Receiving packet:");
+      Serial.println("************************************");
+
+      // read packet
+      while (LoRa.available()) {
+        String LoRaData = LoRa.readString();
+        Serial.print(LoRaData);
+      }
+    }
+    //    vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
+}
+
 void setup() {
   Serial.begin(115200);
   while (!Serial);
@@ -13,35 +40,25 @@ void setup() {
 
   //setup LoRa transceiver module
   LoRa.setPins(SS, RST, DIO0);
-
-  //replace the LoRa.begin(---E-) argument with your location's frequency
-  //433E6 for Asia
-  //866E6 for Europe
-  //915E6 for North America
   while (!LoRa.begin(433E6)) {
     Serial.println(".");
     delay(500);
   }
   // Change sync word (0xF3) to match the receiver
-  // The sync word assures you don't get LoRa messages from other LoRa transceivers ranges from 0-0xFF
   LoRa.setSyncWord(0xF3);
   Serial.println("LoRa Initializing OK!");
+
+  xTaskCreatePinnedToCore(
+    loraReceive,
+    "Receive from TX",
+    1500,
+    NULL,
+    1,
+    NULL,
+    app_cpu
+  );
 }
 
 void loop() {
-  // try to parse packet
-  int packetSize = LoRa.parsePacket();
-  if (packetSize) {
-    // received a packet
-    Serial.println();
-    Serial.println("------------------------------------");
-    Serial.println("Receiving packet:");
-    Serial.println("------------------------------------");
 
-    // read packet
-    while (LoRa.available()) {
-      String LoRaData = LoRa.readString();
-      Serial.print(LoRaData);
-    }
-  }
 }
