@@ -29,7 +29,6 @@ void loraReceive(void *parameter) {
         Serial.print(LoRaData);
       }
     }
-    //    vTaskDelay(1000 / portTICK_PERIOD_MS);
   }
 }
 
@@ -51,7 +50,7 @@ void setup() {
   xTaskCreatePinnedToCore(
     loraReceive,
     "Receive from TX",
-    1500,
+    1024,
     NULL,
     1,
     NULL,
