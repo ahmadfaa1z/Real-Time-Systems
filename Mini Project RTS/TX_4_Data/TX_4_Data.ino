@@ -114,11 +114,12 @@ void loraSend(void *parameter) {
 
     LoRa.println(arr1);
     LoRa.println(arr2);
+    
     LoRa.print("ALTITUDE (in m): ");
     LoRa.println(alt_m);
     LoRa.print("ALTITUDE (in km): ");
     LoRa.println(alt_km);
-    
+
     LoRa.print("SPEED (meter/second): ");
     LoRa.println(speed_mps);
     LoRa.print("SPEED (kilometer/hour): ");
@@ -153,10 +154,10 @@ void setup() {
   xTaskCreatePinnedToCore(
     gpsReader,
     "GPS Reader",
-    1500,
+    1024,
     NULL,
     1,
-    &task_1,
+    NULL,
     app_cpu
   );
 
