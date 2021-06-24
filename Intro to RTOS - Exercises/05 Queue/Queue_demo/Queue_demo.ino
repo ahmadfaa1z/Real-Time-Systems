@@ -26,9 +26,9 @@ void printMessages(void *parameters)
     // See if there's a message in the queue (do not block)
     if (xQueueReceive(msg_queue, (void *)&item, 0) == pdTRUE)
     {
-//      Serial.println(item);
+      Serial.println(item);
     }
-    Serial.println(item);
+//    Serial.println(item);
 
     // Wait before trying again
     vTaskDelay(500 / portTICK_PERIOD_MS);
