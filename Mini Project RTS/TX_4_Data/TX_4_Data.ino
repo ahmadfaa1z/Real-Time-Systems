@@ -9,9 +9,6 @@ static const BaseType_t app_cpu = 1;
 #include <HardwareSerial.h>
 #include <TinyGPS++.h>
 
-// Task Handles
-//static TaskHandle_t task_1 = NULL;
-
 // GPS
 static const int RXPin = 16, TXPin = 17;
 static const uint32_t GPSBaud = 9600;
@@ -23,14 +20,16 @@ TinyGPSPlus gps;
 #define DIO0 2
 
 // Globals
+
+// GPS DATA VALUE
 int year_val;
 int month_val;
 int day_val;
 int hour_val;
 int minute_val;
 int second_val;
-float lat_val;
-float lng_val;
+double lat_val;
+double lng_val;
 double alt_cm;
 double alt_m;
 double alt_km;
@@ -51,7 +50,7 @@ void gpsReader(void *parameter) {
         day_val = gps.date.day();
       }
       if (gps.time.isValid()) {
-        hour_val = 8 + gps.time.hour();
+        hour_val = gps.time.hour();
         minute_val = gps.time.minute();
         second_val = gps.time.second();
       }
@@ -71,52 +70,67 @@ void gpsReader(void *parameter) {
         speed_mps = gps.speed.mps();
         speed_kmph = gps.speed.kmph();
       }
-
     }
-    // try to detect if GPS is functioning
-    if (millis() > 5000 && gps.charsProcessed() < 10)
-      Serial.println(F("No GPS data received: check wiring"));
-
-    // Wait for a while
-    vTaskDelay(100 / portTICK_PERIOD_MS);
   }
+  // Wait for a while
+  vTaskDelay(100 / portTICK_PERIOD_MS);
 }
 
 void loraSend(void *parameter) {
   while (1) {
-    LoRa.beginPacket();
 
-    Serial.println("------------------------------------");
+    Serial.println();
+    Serial.println("************************************");
     Serial.println("Sending packet:");
-    Serial.println("------------------------------------");
-    
+    Serial.println("************************************");
+
     char arr1[32];
     sprintf(arr1, "DATE: %02d-%02d-%d ", month_val, day_val, year_val);
     Serial.println(arr1);
-    
+
     char arr2[32];
     sprintf(arr2, "TIME: %02d:%02d:%02d ", hour_val, minute_val, second_val);
     Serial.println(arr2);
 
+    Serial.println("-------- ALTITUDE/HEIGHT --------");
     Serial.print("ALTITUDE (in m): ");
     Serial.println(alt_m);
+    Serial.print("ALTITUDE (in km): ");
+    Serial.println(alt_km);
 
+    Serial.println("-------- SPEED --------");
+    Serial.print("SPEED (meter/second): ");
+    Serial.println(speed_mps);
+    Serial.print("SPEED (kilometer/hour): ");
+    Serial.println(speed_kmph);
+
+    Serial.println("-------- COORDINATE --------");
     Serial.print("LATITUDE: ");
     Serial.println(lat_val, 6);
     Serial.print("LONGITUDE: ");
     Serial.println(lng_val, 6);
 
+    LoRa.beginPacket();
+
     LoRa.println(arr1);
     LoRa.println(arr2);
     LoRa.print("ALTITUDE (in m): ");
     LoRa.println(alt_m);
+    LoRa.print("ALTITUDE (in km): ");
+    LoRa.println(alt_km);
+    
+    LoRa.print("SPEED (meter/second): ");
+    LoRa.println(speed_mps);
+    LoRa.print("SPEED (kilometer/hour): ");
+    LoRa.println(speed_kmph);
 
     LoRa.print("LATITUDE: ");
     LoRa.println(lat_val, 6);
     LoRa.print("LONGITUDE: ");
     LoRa.println(lng_val, 6);
-    
+
     LoRa.endPacket();
+
     vTaskDelay(1000 / portTICK_PERIOD_MS);
   }
 }
@@ -124,7 +138,7 @@ void loraSend(void *parameter) {
 void setup() {
   Serial.begin(115200);
   Serial1.begin(GPSBaud, SERIAL_8N1, RXPin, TXPin);
-  vTaskDelay(5000 / portTICK_PERIOD_MS);
+  //  vTaskDelay(5000 / portTICK_PERIOD_MS);
 
   // setup LoRa
   LoRa.setPins(SS, RST, DIO0);
@@ -139,10 +153,10 @@ void setup() {
   xTaskCreatePinnedToCore(
     gpsReader,
     "GPS Reader",
-    4000,
+    1500,
     NULL,
     1,
-    NULL,
+    &task_1,
     app_cpu
   );
 
